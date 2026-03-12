@@ -47,7 +47,7 @@ e-courier
 
 ### 1️⃣ Clone the repository
 
-git clone https://github.com/your-username/e-courier.git
+git clone https://github.com/developer-rafsan/E-Courier.git
 
 
 ### 2️⃣ Install Frontend Dependencies
@@ -85,7 +85,7 @@ npm run dev
 Backend will run on:
 
 ```
-http://localhost:5000
+http://localhost:3000
 ```
 
 ---
