@@ -2,9 +2,11 @@ import "dotenv/config";
 import express from "express";
 import connectDB from "./config/DB.js";
 import cors from "cors";
+import errorHandler from "./middleware/errorHandler.js";
+import customError from "./utils/customError.js";
 
 
-const app = express(); 
+const app = express();
 
 // =============================
 // Connect Database
@@ -21,6 +23,12 @@ app.use(express.json());
 // Routes
 // =============================
 
+
+
+// =============================
+// Global Error Handler
+// =============================
+app.use(errorHandler);
 
 // =============================
 // Server Listen
